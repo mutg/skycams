@@ -73,7 +73,7 @@ var LinkedImageProvider = function(link) {
 LinkedImageProvider.prototype.loadImage = function(done) {
 
     var that = this;
-    $.ajax("",{
+    $.ajax("./",{
         success: function(data, text) {
             if (data)
                 done(data);
