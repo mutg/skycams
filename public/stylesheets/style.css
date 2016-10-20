@@ -1,0 +1,70 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body { margin: 0; 
+margin-bottom: 20vh;
+}
+
+#updatebutton {
+    position: fixed;
+    bottom: 0px;
+    background-color: #33cc33;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-size: 4vh;
+    padding: 2vh;
+    display: block;
+    z-index: 10;    
+}
+
+#updatebutton:active {
+    background-color: gray;
+}
+
+.camholder {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cam {
+    margin: 20px 10px;
+    position: relative;
+}
+
+.camtitle {
+    margin: 0;
+    font-size: 36px;
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-left: 0.7em;
+    padding-bottom: 0.3em;
+    border-radius: 0 0 0 0.9em;
+    top: 0px;
+    right: 0px;
+}
+
+.camspinner {
+    position: absolute;
+    top: 0px; left: 0px;
+}
+
+.camimage {
+    zoom: 2;  
+
+    display: block;
+    margin: auto;
+
+    height: auto;
+    max-height: 100%;
+
+    width: auto;
+    max-width: 100%;
+}

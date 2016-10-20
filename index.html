@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">    
+        <title>
+            Skycams
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="js/skycams.js"></script>
+    </head>
+    <body>
+        <button id="updatebutton">
+            Update
+        </button>
+    </body>
+    <script type="text/javascript">
+        var holder = new Camholder(document.getElementById("updatebutton"));
+        holder.addCam("Bondalen", new LinkedImageProvider("http://sunnair.no/webcamera/001.jpg"));
+        holder.addCam("Strandafjellet",new LinkedImageProvider("http://www.strandafjellet.no/webcam/stranda_k2.jpg"));
+        holder.addCam("Geiranger",new LinkedImageProvider("http://213.184.194.128/images/grande.jpg"));
+        holder.addCam("Grodås",new LinkedImageProvider("http://webcam.rbt.no/hornindal.jpg"));
+        holder.addCam("Strynefjellet",new LinkedImageProvider("http://webkamera.vegvesen.no/kamera?id=406332"));
+        holder.addCam("Grotli",new LinkedImageProvider("http://skjaakhytteservice.no/webcam.jpg"));
+        holder.addCam("Galdhøpiggen",new LinkedImageProvider("http://77.106.162.110:8081/axis-cgi/jpg/image.cgi?resolution=704x576"));
+        holder.addCam("Gjende",new LinkedImageProvider("http://www.regiondata.no/vagafiler/webcam/gjende.jpg"));
+        holder.addCam("Fagernes",new LinkedImageProvider("http://weeg.binaer.no/weeg_com/nesjordet.jpg"));
+    </script>
+</html>
